@@ -65,11 +65,12 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin: 10px 0;
+    margin: 10px;
   }
   
   .form-box .field label {
     align-self: flex-start; /* Align labels to the left */
+    padding-bottom: -20px;
   }
   
   .form-box .field input {
@@ -83,7 +84,8 @@
     display: flex;
     align-items: center;
     gap: 5px; /* Small gap between checkbox and label */
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   
   .form-box .actions .btn {
