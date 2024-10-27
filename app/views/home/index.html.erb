@@ -1,29 +1,16 @@
-<div class="text-center">
-
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
-
-    <h1>COLLABORATE</h1>
-    </br>
-
-    <div>
-
-        <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
-        <%= link_to "Login", new_user_session_path, class: "btn btn-primary" %>
-
+<div class="container text-center">
+    <div class="hero-section">
+        <h1 class="hero-title">COLLABORATE</h1>
+        <p class="hero-subtitle">Join our team and enhance your productivity.</p>
+        
+        <div class="button-group">
+            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+            <%= link_to "Login", new_user_session_path, class: "btn btn-secondary btn-lg" %>
+        </div>
     </div>
 
-
-
+    <!-- Animated Images -->
+    <img src="app/assets/images/streamline--collaborations-idea.png" class="animated-background" alt="Collaboration Icon" />
+    <img src="path/to/teamwork-icon.svg" class="animated-background" alt="Teamwork Icon" />
+    <img src="path/to/communication-icon.svg" class="animated-background" alt="Communication Icon" />
 </div>

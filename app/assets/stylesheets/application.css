@@ -1,15 +1,121 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* Homepage Styles */
+.homepage-container {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrolling */
+    background: linear-gradient(45deg, #6f42c1, #ffffff); /* Gradient background */
+    background-size: 200% 200%; /* Size for animation */
+    animation: gradientAnimation 10s ease infinite; /* Animation for gradient */
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; /* Starting position */
+    }
+    50% {
+        background-position: 100% 50%; /* Middle position */
+    }
+    100% {
+        background-position: 0% 50%; /* Reset to starting position */
+    }
+}
+
+/* Hero Section Styles (specific to homepage) */
+.homepage-container .hero-section {
+    background-color: rgba(107, 43, 193, 0.8); /* Semi-transparent purple */
+    color: white; /* Text color */
+    padding: 60px 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 1; /* Ensure this is above the animated background */
+}
+
+/* Navbar-specific styles */
+.navbar {
+    position: relative; /* Ensure navbar remains in document flow */
+    z-index: 2; /* Position navbar above animated background */
+}
+
+
+/* LOGIN PAGE  */
+/* Center form container */
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-box {
+    padding: 20px;
+    width: 300px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  
+  .form-box h2 {
+    text-align: center;
+  }
+  
+  .form-box .field {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 10px 0;
+  }
+  
+  .form-box .field label {
+    align-self: flex-start; /* Align labels to the left */
+  }
+  
+  .form-box .field input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-box .remember-me-container {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Small gap between checkbox and label */
+    margin-top: 10px;
+  }
+  
+  .form-box .actions .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-box .actions .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Signup link styling */
+  .signup-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .signup-link a {
+    color: #007BFF;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-link a:hover {
+    color: #0056b3;
+  }
+  
