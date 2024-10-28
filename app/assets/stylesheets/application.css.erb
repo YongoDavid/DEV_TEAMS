@@ -23,6 +23,17 @@
     }
 }
 
+
+body {
+  background-image: url('<%= asset_path("background.webp") %>');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
 /* Hero Section Styles (specific to homepage) */
 .homepage-container .hero-section {
     background-color: rgba(107, 43, 193, 0.8); /* Semi-transparent purple */
@@ -39,8 +50,28 @@
     z-index: 2; /* Position navbar above animated background */
 }
 
+.hero-subtitle{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: medium;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.navbar-brand , hero-title{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.Logo_img{
+  margin-left: 1rem;
+}
+
 .image1{
   margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 50px;
   height: 50px;
 }
@@ -119,11 +150,13 @@
   
   .signup-link a {
     color: #007BFF;
+    text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .signup-link a:hover {
     color: #0056b3;
+    text-decoration: underline;
   }
   
 /* SIGNUP PAGE  */

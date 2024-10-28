@@ -1,7 +1,11 @@
 <div class="container text-center">
+    
+
     <div class="hero-section">
-        <h1 class="hero-title">COLLABORATE</h1>
-        <p class="hero-subtitle">Join our team and enhance your productivity.</p>
+        <!-- Animated Images -->
+        <%= image_tag 'collab.png', alt: 'collab' , class: "image1" %>
+        <%= image_tag 'people-team.png', alt: 'Teams' , class: "image1" %>
+        <p class="hero-subtitle">Join team and enhance your work productivity.</p>
         
         <div class="button-group">
             <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
@@ -9,7 +13,5 @@
         </div>
     </div>
 
-    <!-- Animated Images -->
-    <%= image_tag 'collab.png', alt: 'collab' , class: "image1" %>
-    <%= image_tag 'people-team.png', alt: 'Teams' , class: "image1" %>
+    
 </div>
