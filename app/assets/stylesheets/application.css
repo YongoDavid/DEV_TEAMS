@@ -39,6 +39,12 @@
     z-index: 2; /* Position navbar above animated background */
 }
 
+.image1{
+  margin-top: 1rem;
+  width: 50px;
+  height: 50px;
+}
+
 
 /* LOGIN PAGE */
 /* Center form container */
@@ -191,3 +197,60 @@
   .signup-link a:hover {
     color: #0056b3;
   }
+
+
+/* FORGOT PASSWORD SECTION  */
+/* Center form container */
+.forgot-password-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-box {
+  padding: 20px;
+  width: 300px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.form-box h2 {
+  text-align: center;
+}
+
+.form-box .field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 10px 0;
+}
+
+.form-box .field label {
+  align-self: flex-start; /* Align labels to the left */
+}
+
+.form-box .field input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px; /* Add spacing below input fields */
+}
+
+.form-box .actions .btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-box .actions .btn:hover {
+  background-color: #45a049;
+}
