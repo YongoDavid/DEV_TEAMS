@@ -25,9 +25,9 @@
 
 
 body {
-  background-color: #f9f7f3;
+  background-image: url('<%= asset_path("team4.jpg") %>');
   background-size: cover;
-  background-position: center;
+  background-position: fit;
   background-repeat: no-repeat;
 }
 
@@ -35,13 +35,8 @@ body {
 
 
 /* Hero Section Styles (specific to homepage) */
-.homepage-container .hero-section {
-    background-color: rgba(107, 43, 193, 0.8); /* Semi-transparent purple */
-    color: white; /* Text color */
-    padding: 60px 20px; /* Add padding */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    z-index: 1; /* Ensure this is above the animated background */
+.hero-section {
+  justify-content: "center"
 }
 
 /* Navbar-specific styles */
