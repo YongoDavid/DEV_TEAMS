@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 /* Navbar-specific styles */
 .navbar {
@@ -9,9 +15,10 @@
   display : flex;
   align-items:center;
   justify-content: center;
+  margin: auto;
 }
 .hero-content{
-  padding: -6rem;
+  line-height : 3rem;
 }
 
 .hero-subtitle1{
@@ -25,6 +32,10 @@
   font-size: 1rem;
   font-weight: 500;
   font-style: normal;
+}
+
+.btn{
+  font-size: 16px;
 }
 
 .navbar-brand , hero-title{
@@ -254,4 +265,40 @@
 
 .form-box .actions .btn:hover {
   background-color: #45a049;
+}
+
+# SIGNED IN NAV 
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    /* Stacking items vertically for smaller screens */
+    flex-direction: column-reverse;
+    padding: 10px; /* Adding padding for mobile layout */
+    align-items:center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .image2{
+    max-width:100vw;
+  }
+
+
+  .hero-subtitle1{
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+}
+  .hero-subtitle2{
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .hero-content{
+  line-height :1.5rem;
+  }
 }
