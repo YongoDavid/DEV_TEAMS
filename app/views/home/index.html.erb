@@ -3,14 +3,18 @@
 
     <div class="hero-section">
         <!-- Animated Images -->
-        <%= image_tag 'collab.png', alt: 'collab' , class: "image1" %>
-        <%= image_tag 'people-team.png', alt: 'Teams' , class: "image1" %>
-        <p class="hero-subtitle">Join team and enhance your work productivity.</p>
-        
-        <div class="button-group">
-            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-            <%= link_to "Login", new_user_session_path, class: "btn btn-secondary btn-lg" %>
+        <%= image_tag 'Homeimg.jpg', alt: 'Teams' , class: "image2" %>
+        <div class="hero-content">
+            <p class="hero-subtitle1">Think, plan, and track <br> all in one place</p>
+            <p class="hero-subtitle2">Join team and boost your work productivity.</p>
+
+            <div class="button-group">
+                <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+                <%= link_to "Login", new_user_session_path, class: "btn btn-secondary btn-lg" %>
+            </div>
         </div>
+        
+        
     </div>
 
     

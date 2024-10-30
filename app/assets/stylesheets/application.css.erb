@@ -1,43 +1,3 @@
-/* Homepage Styles */
-.homepage-container {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; /* Prevent scrolling */
-    background: linear-gradient(45deg, #6f42c1, #ffffff); /* Gradient background */
-    background-size: 200% 200%; /* Size for animation */
-    animation: gradientAnimation 10s ease infinite; /* Animation for gradient */
-}
-
-/* Gradient Animation */
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%; /* Starting position */
-    }
-    50% {
-        background-position: 100% 50%; /* Middle position */
-    }
-    100% {
-        background-position: 0% 50%; /* Reset to starting position */
-    }
-}
-
-
-body {
-  background-image: url('<%= asset_path("team4.jpg") %>');
-  background-size: cover;
-  background-position: fit;
-  background-repeat: no-repeat;
-}
-
-
-
-
-/* Hero Section Styles (specific to homepage) */
-.hero-section {
-  justify-content: "center"
-}
 
 /* Navbar-specific styles */
 .navbar {
@@ -45,10 +5,24 @@ body {
     z-index: 2; /* Position navbar above animated background */
 }
 
-.hero-subtitle{
+.hero-section{
+  display : flex;
+  align-items:center;
+  justify-content: center;
+}
+.hero-content{
+  padding: -6rem;
+}
+
+.hero-subtitle1{
   font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-size: medium;
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.hero-subtitle2{
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
   font-weight: 500;
   font-style: normal;
 }
@@ -64,11 +38,9 @@ body {
   margin-left: 1rem;
 }
 
-.image1{
+.image2{
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 50px;
-  height: 50px;
 }
 
 
@@ -225,6 +197,7 @@ body {
   .signup-link a:hover {
     color: #0056b3;
   }
+
 
 
 /* FORGOT PASSWORD SECTION  */
