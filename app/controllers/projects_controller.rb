@@ -21,10 +21,16 @@ class ProjectsController < ApplicationController
     def edit
   
     end
+
+    # progress paramter
+    def project_params
+      params.require(:project).permit(:name, :description, :progress, :user_id)
+    end
   
     # POST /projects or /projects.json
     def create
       @project = Project.new(project_params)
+      @project.user = current_user  # Assign the current user to the project
   
       respond_to do |format|
         if @project.save
