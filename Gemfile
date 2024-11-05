@@ -5,12 +5,11 @@ gem "rails", "~> 7.1.3", ">= 7.1.3.4"
 
 # Database gems
 group :development, :test do
-  gem "sqlite3"
-  gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
+  gem 'sqlite3'
 end
 
 group :production do
-  gem "pg"
+  gem 'pg'
 end
 
 # Custom gems
