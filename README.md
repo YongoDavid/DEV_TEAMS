@@ -63,5 +63,6 @@ routes.rb
 views > project > index.html.haml and new.html.haml
 go back t0 db > migrate after migrate 
 
-
-<!-- STOPPED AT TRYING TO CREATE A PROJECT AND THERE WAS AN ERROR  -->
+<!-- TESTING LOGS 
+david@gmail.com
+david123 -->
