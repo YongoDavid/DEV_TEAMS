@@ -66,3 +66,5 @@ go back t0 db > migrate after migrate
 <!-- TESTING LOGS 
 david@gmail.com
 david123 -->
+
+TEST on work machine 
